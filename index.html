@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Осман - Юный гений программирования</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .pulse:hover {
+            animation: pulse 1.5s infinite;
+        }
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, #000000, #f97316, #ef4444, #ffffff);
+        }
+        .skill-icon {
+            transition: all 0.3s ease;
+        }
+        .skill-icon:hover {
+            transform: translateY(-5px);
+            color: #ef4444;
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen font-sans">
+    <header class="py-8 px-4 md:px-8 lg:px-16 bg-gradient-to-r from-black via-orange-600 to-red-600">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="w-24 h-24 rounded-full bg-red-600 flex items-center justify-center mb-4 border-4 border-orange-500">
+                <i class="fas fa-user-secret text-4xl text-white"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-2">
+                <span class="text-white">ОСМАН</span>
+            </h1>
+            <h2 class="text-xl md:text-2xl text-orange-400 font-semibold text-center mb-4">Лучший юный программист</h2>
+            <div class="flex space-x-4 mt-2">
+                <span class="px-3 py-1 bg-red-600 text-white rounded-full text-sm font-medium">10 лет</span>
+                <span class="px-3 py-1 bg-orange-500 text-black rounded-full text-sm font-medium">Виртуальная реальность</span>
+                <span class="px-3 py-1 bg-white text-black rounded-full text-sm font-medium">Скорость печати</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <main class="container mx-auto px-4 md:px-8 lg:px-16 py-12">
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center text-red-500 border-b-2 border-orange-500 pb-2 inline-block">
+                <i class="fas fa-code mr-2"></i>Мои Навыки
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Skill 1 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-red-500/50 transition-all text-center pulse">
+                    <div class="skill-icon text-5xl mb-4 text-orange-500">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">3D-моделирование</h3>
+                    <p class="text-gray-300">Профессионально создаю 3D-модели в Tinkercad</p>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-red-500/50 transition-all text-center pulse">
+                    <div class="skill-icon text-5xl mb-4 text-red-500">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">VR разработка</h3>
+                    <p class="text-gray-300">Создаю миры виртуальной реальности в CoSpaces</p>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-red-500/50 transition-all text-center pulse">
+                    <div class="skill-icon text-5xl mb-4 text-white">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Разработка игр</h3>
+                    <p class="text-gray-300">Создаю увлекательные игры в Kodu и Construct 3</p>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-red-500/50 transition-all text-center pulse">
+                    <div class="skill-icon text-5xl mb-4 text-orange-400">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Анимация</h3>
+                    <p class="text-gray-300">Делаю анимационные видео в Animaker</p>
+                </div>
+                
+                <!-- Skill 5 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-red-500/50 transition-all text-center pulse">
+                    <div class="skill-icon text-5xl mb-4 text-red-400">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Скорость печати</h3>
+                    <p class="text-gray-300">Улучшаю навыки набора текста в Stamina</p>
+                </div>
+                
+                <!-- Skill 6 -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-red-500/50 transition-all text-center pulse">
+                    <div class="skill-icon text-5xl mb-4 text-white">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Плавание</h3>
+                    <p class="text-gray-300">Страстно увлекаюсь плаванием</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mb-16"></div>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center text-orange-500 border-b-2 border-red-500 pb-2 inline-block">
+                <i class="fas fa-trophy mr-2"></i>Мои Достижения
+            </h2>
+            
+            <div class="space-y-8">
+                <div class="bg-gradient-to-r from-gray-900 to-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-red-600">
+                    <div class="flex items-start">
+                        <div class="text-2xl mr-4 text-orange-500">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Эксперт по 3D-моделированию</h3>
+                            <p class="text-gray-300">Создаю сложные и детализированные модели в Tinkercad, демонстрируя продвинутые навыки пространственного мышления.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-r from-gray-900 to-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-orange-500">
+                    <div class="flex items-start">
+                        <div class="text-2xl mr-4 text-red-500">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Пионер VR технологий</h3>
+                            <p class="text-gray-300">Освоил создание интерактивных миров в CoSpaces, включая программирование поведения объектов на JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-r from-gray-900 to-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-white">
+                    <div class="flex items-start">
+                        <div class="text-2xl mr-4 text-orange-400">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Разработчик игр</h3>
+                            <p class="text-gray-300">Создал несколько полностью функциональных игр в Kodu и начал работать над сложными 2D-играми в Construct 3.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-r from-gray-900 to-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+                    <div class="flex items-start">
+                        <div class="text-2xl mr-4 text-white">
+                            <i class="fas fa-swimmer"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Мастер плавания</h3>
+                            <p class="text-gray-300">Регулярно посещаю бассейн, улучшая технику и выносливость, что помогает сохранять концентрацию в программировании.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mb-16"></div>
+
+        <section class="mb-16" id="projects">
+            <h2 class="text-3xl font-bold mb-8 text-center text-white border-b-2 border-orange-500 pb-2 inline-block">
+                <i class="fas fa-puzzle-piece mr-2"></i>Мои Увлечения
+            </h2>
+            
+            <div class="grid gap-6 md:grid-cols-2">
+                <div class="bg-gray-900 border border-orange-500/30 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-red-500 text-2xl mr-3">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Скоростная печать</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Постоянно работаю над улучшением скорости и точности печати в Stamina. Моя цель - достичь скорости 250 символов в минуту!</p>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div class="bg-orange-500 h-2.5 rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 border border-red-500/30 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-white text-2xl mr-3">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Изучение новых технологий</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Каждый день узнаю что-то новое в программировании, 3D-моделировании и создании игр, расширяя свои горизонты.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-xs">JavaScript</span>
+                        <span class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs">3D Modeling</span>
+                        <span class="px-3 py-1 bg-white/20 text-white rounded-full text-xs">Game Design</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 border border-white/30 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-orange-400 text-2xl mr-3">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Плавание</h3>
+                    </div>
+                    <p class="text-gray-300">Регулярные тренировки в бассейне помогают мне сохранять ясность ума и энергию для моих технических проектов.</p>
+                </div>
+                
+                <div class="bg-gray-900 border border-red-500/30 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-white text-2xl mr-3">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Развитие мышления</h3>
+                    </div>
+                    <p class="text-gray-300">Логические задачи и головоломки - моё любимое развлечение, которое помогает мне в программировании.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-black via-red-900 to-orange-900 py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col items-center">
+                <h3 class="text-2xl font-bold mb-4 text-white">Осман - Юный гений программирования</h3>
+                <div class="flex space-x-6 mb-6">
+                    <a href="#" class="text-white hover:text-orange-400 text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-orange-400 text-2xl">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-orange-400 text-2xl">
+                        <i class="fab fa-itch-io"></i>
+                    </a>
+                </div>
+                <p class="text-gray-300 text-center text-sm">© 2023 Все права защищены. Осман - лучший юный программист.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Анимация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', () => {
+            const skills = document.querySelectorAll('.pulse');
+            
+            skills.forEach((skill, index) => {
+                setTimeout(() => {
+                    skill.style.opacity = '1';
+                    skill.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+            
+            // Интерактивный прогресс при наведении
+            const progressBar = document.querySelector('.bg-orange-500');
+            if(progressBar) {
+                progressBar.addEventListener('mouseover', () => {
+                    progressBar.style.width = '85%';
+                });
+                progressBar.addEventListener('mouseout', () => {
+                    progressBar.style.width = '70%';
+                });
+            }
+        });
+    </script>
+</body>
+</html> 
